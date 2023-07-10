@@ -17,9 +17,7 @@ import requests, aiohttp
 logger = logging.getLogger(__name__)
 logger.setLevel(logging.INFO)
 
-BTN_URL_REGEX = re.compile(
-    r"(\[([^\[]+?)\]\((buttonurl|buttonalert):(?:/{0,2})(.+?)(:same)?\))"
-)
+BTN_URL_REGEX = re.compile(r"(\[([^\[]+?)\]\((buttonurl|buttonalert):(?:/{0,2})(.+?)(:same)?\))")
 
 imdb = Cinemagoer() 
 
